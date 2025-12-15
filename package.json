@@ -1,0 +1,28 @@
+{
+  "name": "raven-poc",
+  "version": "1.0.0",
+  "description": "A POC for the Raven project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm:start-server\" \"npm:start-client\"",
+    "start-server": "npm --prefix server run dev",
+    "start-client": "npm --prefix client run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yomazi/raven-poc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yomazi/raven-poc/issues"
+  },
+  "homepage": "https://github.com/yomazi/raven-poc#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "prettier-plugin-organize-imports": "^4.3.0"
+  }
+}
